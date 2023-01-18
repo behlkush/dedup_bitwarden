@@ -39,8 +39,8 @@ for item in items:
         deduped_items.append(item)
 
 data["items"] = deduped_items
-print(f"{len(items) - len(item_stringified)} duplicates removed.")
-print(f"Exported file has {len(item_stringified)} login/password/secret items.")
+print(f"{len(items) - len(deduped_items)} duplicates removed.")
+print(f"Exported file has {len(deduped_items)} login/password/secret items.")
 
 file_handle.close()
 
